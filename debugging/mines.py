@@ -65,7 +65,7 @@ class Minesweeper:
                 y = int(input("Enter y coordinate: "))
                 if not (0 <= x < self.width and 0 <= y < self.height):
                     raise ValueError("Les coordonnees sont hors de la grille.")
-                If not self.reveal(x, y):
+                if not self.reveal(x, y):
                     self.print_board(reveal=True)
                     print("Game Over! You hit a mine.")
                     break
